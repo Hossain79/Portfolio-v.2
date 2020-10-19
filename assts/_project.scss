@@ -35,6 +35,7 @@
 					height: 500px;
 					width: 600px;
 					border-radius: 5px;
+					
 					&:hover{
 						z-index: 3;
 					}
@@ -42,8 +43,10 @@
 						height: 500px;
 						width: 600px;
 						border-radius: 5px;
+						opacity: .5;
 						&:hover{
 							transform: scale(1.2);
+							opacity: 1;
 							
 						}
 					}
@@ -117,7 +120,7 @@
 				.project-info {
 					transform: translateX(85px);
 					text-align: left;
-					// z-index: 0;
+					z-index: 1;
 					.project-name {
 						h3 {
 							font-size: 3rem;
@@ -173,14 +176,16 @@
 				}
 				.project-image {
 					&:hover{
-						z-index: 1;
+						z-index: 3;
 					}
 					img {
 						height: 500px;
 						width: 600px;
 						border-radius: 5px;
+						opacity: .7;
 						&:hover{
 							transform: scale(1.2);
+							opacity: 1;
 							
 						}
 					}
