@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:wght@900&family=Roboto+Mono&display=swap');
+$border: #41dfca;
+$backgroundPrimary: #19181f;
+$primaryFontColor: #c7c7d4;
+$cardBackground: rgb(11, 11, 46);
+@mixin primaryBtn {
+	border: 1px solid $border;
+	padding: 12px 25px;
+	font-size: 1.6rem;
+	border-radius: 3px;
+}
+@mixin centre {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+html,
+body {
+	.modal-container {
+		background-color: rgba(0, 0, 0, 0.6);
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-size: 10px;
+	background-color: $backgroundPrimary;
+	color: $primaryFontColor;
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	p {
+		font-family: 'Roboto Mono', sans-serif;
+	}
+}
+@import './verticalemail';
+@import './varieables';
+@import './burger';
+@import './home';
+@import './about';
+@import './skill';
+@import './project';
+@import './sample';
+@import './footer';
+@import './mediaQueries';

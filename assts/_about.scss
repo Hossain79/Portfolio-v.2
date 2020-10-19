@@ -1,0 +1,146 @@
+.about {
+	width: 100%;
+	height: 100vh;
+	color: #aaaaaa;
+	.about-container {
+		height: 100vh;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		.about-me {
+			margin: 0;
+			h1 {
+				font-size: 3rem;
+				color: rgb(233, 233, 250);
+				display: flex;
+			}
+			h1::after {
+				content: "";
+				height: 1px;
+				background-color: $border;
+				width: 300px;
+				position: relative;
+				display: block;
+				top: 15px;
+				margin-left: 20px;
+			}
+			p {
+				font-size: 1.6rem;
+				width: 500px;
+				font-family: 'Roboto Mono', sans-serif;
+			}
+
+			.skills {
+				width: 500px;
+				margin-top: 50px;
+				ul {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					overflow: hidden;
+					padding: 0px;
+					margin: 20px;
+					list-style: none;
+					font-size: 1.6rem;
+					text-align: center;
+					li {
+						margin-bottom: 40px;
+						span {
+							color: $border;
+						}
+						.html:hover {
+							color: rgb(253, 78, 9);
+						}
+						.css3:hover {
+							color: rgb(9, 216, 253);
+						}
+						.sass:hover {
+							color: rgb(253, 9, 70);
+						}
+						.js:hover {
+							color: rgb(253, 237, 9);
+						}
+						.react:hover {
+							color: rgb(9, 204, 253);
+						}
+						.node:hover {
+							color: green;
+						}
+					}
+				}
+			}
+		}
+		.about-img {
+			margin: 50px;
+			margin-left: 100px;
+			background-image: url(./imgs/profile.jpg);
+			background-size: cover;
+			height: 250px;
+			width: 200px;
+			.img-layer {
+				height: 250px;
+				width: 200px;
+				background-color: rgba(56, 59, 59, 0.644);
+				&:hover {
+					background-color: rgba(248, 245, 245, 0);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.about {
+		.about-container {
+			display: block;
+			.about-me {
+				display: block;
+				h1 {
+					font-size: 6rem;
+					display: block;
+					text-align: center;
+					margin-top: 100px;
+				}
+				h1::after {
+					display: none;
+				}
+				p {
+					width: auto;
+					margin: 50px;
+					text-align: left;
+				}
+				.skills {
+					width: 100%;
+					text-align: center;
+				}
+			}
+			.about-img {
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.about {
+		height: 900px;
+		.about-container {
+			.about-me {
+				h1 {
+					font-size: 3rem;
+				}
+				p {
+					font-size: 1.2rem;
+					margin: 0 20px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 280px) {
+	.about {
+		height: 1000px;
+	}
+}

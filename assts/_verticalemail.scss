@@ -1,0 +1,28 @@
+.email {
+	position: absolute;
+	top: 50%;
+	left: -70px;
+	opacity: .5;
+	font-family: 'Roboto Mono', monospace;
+	z-index: 2000;
+	a {
+		text-decoration: none;
+		color: rgb(185, 180, 180);
+		background-color: $cardBackground;
+		border: .5px solid rgba(196, 180, 180, 0.301);
+		padding: 3px 6px;
+		letter-spacing: 1px;
+		position: fixed;
+		font-size: 1.3rem;
+		transform: rotate(270deg);
+		span {
+			color: $border;
+		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.email {
+		display: none;
+	}
+}
